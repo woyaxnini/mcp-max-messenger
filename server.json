@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.woyaxnini/max-messenger",
+  "description": "MCP server for MAX Messenger — Russian national messenger by VK.",
+  "repository": {
+    "url": "https://github.com/woyaxnini/mcp-max-messenger",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@woyax/mcp-max-messenger",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MAX_TOKEN",
+          "description": "Your MAX bot token from dev.max.ru",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

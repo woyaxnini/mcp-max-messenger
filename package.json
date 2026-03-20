@@ -1,6 +1,7 @@
 {
   "name": "@woyax/mcp-max-messenger",
   "version": "1.0.0",
+  "mcpName": "io.github.woyaxnini/max-messenger",
   "description": "MCP server for MAX Messenger — Russia's national messenger by VK. Send messages, read chats, manage conversations via AI.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
