@@ -1,0 +1,80 @@
+{
+  "name": "@woyax/mcp-max-messenger",
+  "version": "1.0.0",
+  "displayName": "MAX Messenger",
+  "description": "MCP server for MAX Messenger — Russia's national messenger by VK. Send messages, read chats, manage conversations via AI.",
+  "homepage": "https://github.com/woyaxnini/mcp-max-messenger",
+  "repository": "https://github.com/woyaxnini/mcp-max-messenger",
+  "license": "MIT",
+  "author": {
+    "name": "Oleg Alekseev",
+    "url": "https://github.com/woyaxnini"
+  },
+  "keywords": [
+    "mcp",
+    "max",
+    "max-messenger",
+    "vk",
+    "russia",
+    "messenger",
+    "bot",
+    "ai",
+    "automation"
+  ],
+  "categories": ["messaging", "communication"],
+  "transport": {
+    "stdio": {
+      "command": "npx",
+      "args": ["-y", "@woyax/mcp-max-messenger"],
+      "env": {
+        "MAX_TOKEN": {
+          "description": "Your MAX bot token. Get it from max.ru",
+          "required": true,
+          "secret": true
+        }
+      }
+    },
+    "http": {
+      "url": "https://mcp.woyax.ru/mcp",
+      "description": "Hosted version — contact author for access"
+    }
+  },
+  "tools": [
+    {
+      "name": "get_bot_info",
+      "description": "Get information about the MAX bot (name, ID, username)"
+    },
+    {
+      "name": "get_chats",
+      "description": "List all group chats the bot participates in"
+    },
+    {
+      "name": "get_messages",
+      "description": "Read messages from a MAX chat"
+    },
+    {
+      "name": "send_message",
+      "description": "Send a text message to a MAX chat or user"
+    },
+    {
+      "name": "edit_message",
+      "description": "Edit the text of an existing message"
+    },
+    {
+      "name": "delete_message",
+      "description": "Delete a message sent by the bot"
+    },
+    {
+      "name": "get_chat_members",
+      "description": "Get the list of participants in a group chat"
+    },
+    {
+      "name": "pin_message",
+      "description": "Pin a message in a group chat"
+    },
+    {
+      "name": "unpin_message",
+      "description": "Unpin the currently pinned message in a group chat"
+    }
+  ]
+}
